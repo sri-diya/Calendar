@@ -2,7 +2,7 @@
 .App {
   text-align: center;
   font-family: 'Arial', sans-serif;
-  max-width: 500px; /* Minimized calendar size */
+  max-width: 600px; /* Minimized calendar size */
   margin: 0 auto;
   padding: 20px;
 }
@@ -12,22 +12,23 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  border-radius: 4px;
 }
 
 button {
-  background-color: black;
-  color: #fff;
+  background-color: #ff0004;
+  color: #199e67;
   border: none;
   padding: 8px 16px;
   font-size: 14px;
-  cursor: pointer;
+  cursor: grab;
   border-radius: 4px;
   margin: 0 5px;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #09b152;
 }
 
 h2 {
@@ -39,20 +40,22 @@ h2 {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 1px;
-  background-color: #f0f0f0;
+  background-color: #cde0f0;
   max-width: 100%;
   margin: 0 auto;
+  border-radius: 4px;
 }
 
 .day-header, .day {
   padding: 10px;
   box-sizing: border-box;
+  border-radius: 4px;
   text-align: center;
 }
 
 .day-header {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #7954e1;
+  color: #065c68;
   font-weight: bold;
   font-size: 12px;
 }
@@ -73,19 +76,19 @@ h2 {
 }
 
 .empty {
-  background-color: #f9f9f9;
+  background-color: #240648;
   border: none;
 }
 
 .has-event {
-  background-color: #e3f2fd;
+  background-color: #9fd1cc;
 }
 
 .event {
   position: absolute;
   bottom: 5px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #11e799;
+  color: #2a80ab;
   padding: 3px;
   border-radius: 4px;
   text-overflow: ellipsis;
@@ -97,7 +100,7 @@ h2 {
 }
 
 .event-form {
-  background-color: #fff;
+  background-color: #def7c8;
   border: 1px solid #040000;
   border-radius: 4px;
   padding: 15px;
@@ -113,7 +116,7 @@ textarea {
   height: 80px;
   padding: 8px;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: 1px solid #893ced;
   border-radius: 4px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -124,7 +127,7 @@ textarea {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: 1px solid #f1129c;
   border-radius: 4px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -137,7 +140,7 @@ textarea {
 }
 
 .save-btn, .delete-btn, .cancel-btn {
-  background-color: #28a745;
+  background-color: #55b8ea;
   color: #fff;
   border: dashed;
   padding: 8px 16px;
@@ -152,7 +155,7 @@ textarea {
 }
 
 .cancel-btn {
-  background-color: #7c7d6c;
+  background-color: #9211c2;
 }
 
 .save-btn:hover {
@@ -168,8 +171,8 @@ textarea {
 }
 
 .events-details {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #06dd0d;
+  border: 1px solid #a1a307;
   border-radius: 4px;
   padding: 15px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -198,7 +201,7 @@ textarea {
 .filter-select {
   padding: 6px;
   font-size: 14px;
-  border: 1px solid #ddd;
+  border: 1px solid #f9a1de;
   border-radius: 4px;
 }
 
